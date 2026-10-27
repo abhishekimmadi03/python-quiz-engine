@@ -5,60 +5,60 @@ responses=[]
 interrupted=False
 questions = [
     {
-        "question": "1. Which Python function returns the number of items in a list?",
-        "options": {
-            "a": "count()",
-            "b": "size()",
-            "c": "len()",
-            "d": "length()"
-        },
-        "answer": "c",
-        "hint": "This function can tell you how many elements a list contains."
-    },
-    {
-        "question": "2. Which data structure stores information as key-value pairs?",
-        "options": {
-            "a": "List",
-            "b": "Dictionary",
-            "c": "Tuple",
-            "d": "Set"
-        },
-        "answer": "b",
-        "hint": "Think of a structure where you access a value using a key."
-    },
-    {
-        "question": "3. Which keyword is used to define a function in Python?",
-        "options": {
-            "a": "function",
-            "b": "define",
-            "c": "fun",
-            "d": "def"
-        },
-        "answer": "d",
-        "hint": "It is a three-letter keyword used before a function name."
-    },
-    {
-        "question": "4. What is the output of this code: print(2 ** 3)?",
-        "options": {
-            "a": "6",
-            "b": "8",
-            "c": "9",
-            "d": "5"
-        },
-        "answer": "b",
-        "hint": "The double asterisk is Python's exponentiation operator."
-    },
-    {
-        "question": "5. Which operator checks whether two values are equal?",
-        "options": {
-            "a": "=",
-            "b": "!=",
-            "c": "==",
-            "d": ">="
-        },
-        "answer": "c",
-        "hint": "It uses two equal signs, unlike the operator used for assignment."
-    }
+           "question": "1. Which Python function returns the number of items in a list?",
+           "options": {
+               "a": "count()",
+               "b": "size()",
+               "c": "len()",
+               "d": "length()"
+           },
+           "answer": "c",
+           "hint": "This function can tell you how many elements a list contains."
+       },
+       {
+           "question": "2. Which data structure stores information as key-value pairs?",
+           "options": {
+               "a": "List",
+               "b": "Dictionary",
+               "c": "Tuple",
+               "d": "Set"
+           },
+           "answer": "b",
+           "hint": "Think of a structure where you access a value using a key."
+       },
+       {
+           "question": "3. Which keyword is used to define a function in Python?",
+           "options": {
+               "a": "function",
+               "b": "define",
+               "c": "fun",
+               "d": "def"
+           },
+           "answer": "d",
+           "hint": "It is a three-letter keyword used before a function name."
+       },
+       {
+           "question": "4. What is the output of this code: print(2 ** 3)?",
+           "options": {
+               "a": "6",
+               "b": "8",
+               "c": "9",
+               "d": "5"
+           },
+           "answer": "b",
+           "hint": "The double asterisk is Python's exponentiation operator."
+       },
+       {
+           "question": "5. Which operator checks whether two values are equal?",
+           "options": {
+               "a": "=",
+               "b": "!=",
+               "c": "==",
+               "d": ">="
+           },
+           "answer": "c",
+           "hint": "It uses two equal signs, unlike the operator used for assignment."
+       }
 ]
 total=len(questions)
 if total==0:
