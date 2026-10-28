@@ -1,3 +1,4 @@
+please see it in code view for better understanding
 PS C:\Users\HP\Desktop\mini proj> python quiz.py
 1. Which Python function returns the number of items in a list?
 a)count()
