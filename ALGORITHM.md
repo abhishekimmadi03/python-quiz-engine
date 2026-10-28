@@ -1,94 +1,86 @@
-# Algorithm and Pseudocode — Python Quiz Engine
+# Algorithm: Python Quiz Engine
 
-## Algorithm
+## Step 1: Start
+1. Import the `random` module.
+2. Initialize `correct`, `incorrect`, and `score` to 0.
+3. Set the passing percentage to 70%.
+4. Initialize an empty `responses` list and set `interrupted` to `False`.
 
-1. Initialize the correct-answer count, incorrect-answer count, response list, and interruption flag.
-2. Store the quiz questions in a list. Each question contains the question text, four choices, the correct choice key, and a hint.
-3. Count the questions in the question bank.
-4. If the question bank is empty, display a message and do not start scoring.
-5. Otherwise, visit the questions in order:
-   - Display the question and its choices.
-   - Ask the user for an answer.
-   - Remove surrounding whitespace and convert the answer to lowercase.
-   - While the answer is not one of `a`, `b`, `c`, or `d`, display an invalid-input message and ask again.
-   - Compare the valid answer with the correct answer key.
-   - Increase the correct or incorrect counter accordingly.
-   - Store the user's answer and whether it was correct.
-6. If the user interrupts the quiz with `Ctrl+C`, set the interruption flag and display a termination message.
-7. Display the quiz status and answer counts.
-8. If the quiz completed normally, calculate the percentage and display the score and pass/fail result.
-9. Review stored responses and display each missed question, the user's answer, the correct answer, and the hint.
-10. If interrupted, list questions that were not answered.
+## Step 2: Initialize Questions
+1. Create a list of quiz questions.
+2. For each question, store:
+   - Question text
+   - Multiple-choice options
+   - Correct answer
+   - Hint
+   - Difficulty level
+   - Points assigned to the question
+3. Calculate the total number of questions.
+4. If there are no questions, display "Add Questions" and stop the quiz.
+5. Otherwise, calculate the maximum possible score by adding the points of all questions.
 
-## Pseudocode
+## Step 3: Randomize Questions
+1. Create a copy of the original question list.
+2. Shuffle the copied list using `random.shuffle()`.
+3. Present the questions in the shuffled order.
 
-```text
-START
+## Step 4: Display and Validate Answers
+For each question in the shuffled list:
 
-SET correct = 0
-SET incorrect = 0
-SET pass_percent = 70
-SET responses = empty list
-SET interrupted = false
-LOAD questions
-SET total = number of questions
+1. Display the question text.
+2. Display its difficulty level and point value.
+3. Display all available options.
+4. Ask the user to enter an answer.
+5. Convert the answer to lowercase and remove surrounding whitespace.
+6. If the answer is not `a`, `b`, `c`, or `d`, display an error message and ask again.
+7. Compare the validated answer with the correct answer key.
 
-IF total equals 0
-    DISPLAY "Add Questions."
-ELSE
-    TRY
-        FOR each question in questions, in order
-            DISPLAY question text
-            DISPLAY all choices
-            INPUT answer
-            CONVERT answer to lowercase and trim surrounding whitespace
+## Step 5: Calculate the Score
+1. If the answer is correct:
+   - Increase `correct` by 1.
+   - Add the question's points to `score`.
+2. Otherwise:
+   - Increase `incorrect` by 1.
+3. Store the user's answer and its correctness status in the `responses` list.
 
-            WHILE answer is not a, b, c, or d
-                DISPLAY "Invalid answer"
-                INPUT answer again
-                NORMALIZE answer
-            END WHILE
+## Step 6: Handle Keyboard Interruption
+1. Monitor the quiz for a `KeyboardInterrupt`, such as when the user presses Ctrl+C.
+2. If an interruption occurs:
+   - Set `interrupted` to `True`.
+   - Display a termination message.
+3. Display the quiz status.
+4. If the quiz was interrupted, show the number of questions answered, correct answers, incorrect answers, and points earned.
 
-            COMPARE answer with the question's answer key
-            IF answer is correct
-                INCREMENT correct
-                SET status = true
-            ELSE
-                INCREMENT incorrect
-                SET status = false
-            END IF
+## Step 7: Display Final Results
+If the quiz finishes normally:
 
-            APPEND answer and status to responses
-        END FOR
-    CATCH KeyboardInterrupt
-        SET interrupted = true
-        DISPLAY termination message
-    END TRY
+1. Display the number of correct answers.
+2. Display the number of incorrect answers.
+3. Display the points earned and maximum possible points.
+4. Calculate the weighted percentage:
 
-    DISPLAY summary
+   **Weighted Percentage = (Points Earned / Maximum Possible Points) × 100**
 
-    IF interrupted is false
-        SET percentage = (correct / total) * 100
-        DISPLAY score and percentage
-        IF percentage >= pass_percent
-            DISPLAY pass result
-        ELSE
-            DISPLAY fail result
-        END IF
-    ELSE
-        DISPLAY incomplete result
-    END IF
+5. If the percentage is at least 70%, display "Passed".
+6. Otherwise, display "Failed".
 
-    FOR each recorded response, in order
-        IF response status is false
-            DISPLAY missed question, user's answer, correct answer, and hint
-        END IF
-    END FOR
+## Step 8: Review Missed Questions
+1. Examine each recorded response.
+2. If the answer was incorrect:
+   - Display the question.
+   - Display its options.
+   - Show the user's answer.
+   - Show the correct answer.
+   - Display the difficulty, point value, and hint.
+3. If no questions were missed and the quiz was completed, display "No Missed Questions".
 
-    IF interrupted is true
-        DISPLAY questions from index equal to number of responses through the final question as unanswered
-    END IF
-END IF
+## Step 9: Display Unanswered Questions
+If the quiz was interrupted:
 
-END
-```
+1. Identify questions that were not answered.
+2. Display each unanswered question and its options.
+3. Display "Not Answered" as the user's answer.
+4. Display the correct answer, difficulty, point value, and hint.
+
+## Step 10: End
+Terminate the quiz after displaying the applicable results and question reviews.
