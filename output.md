@@ -1,0 +1,122 @@
+PS C:\Users\HP\Desktop\mini proj> python quiz.py
+1. Which Python function returns the number of items in a list?
+a)count()
+b)size()
+c)len()
+d)length()
+Enter your answer (a/b/c/d): C
+2. Which data structure stores information as key-value pairs?
+a)List
+b)Dictionary
+c)Tuple
+d)Set
+Enter your answer (a/b/c/d): W
+Invalid answer
+Enter your answer (a/b/c/d):  
+Invalid answer
+Enter your answer (a/b/c/d): b
+3. Which keyword is used to define a function in Python?
+a)function
+b)define
+c)fun
+d)def
+Enter your answer (a/b/c/d):  a 
+4. What is the output of this code: print(2 ** 3)?
+a)6
+b)8
+c)9
+d)5
+Enter your answer (a/b/c/d): 
+Quiz Terminated By User
+
+---- Quiz Status------
+Quiz Status: Incomplete
+Questions Answered: 3 / 5
+Correct Answers:  2
+Wrong Answers:  1
+--- Your Missed Questions ---
+Question: 3. Which keyword is used to define a function in Python?
+a)function
+b)define
+c)fun
+d)def
+Your Answer: a
+Correct Answer: d
+Hint: It is a three-letter keyword used before a function name.
+
+ Unanswered Questions
+4. What is the output of this code: print(2 ** 3)?
+a )   6
+b )   8
+c )   9
+Your Answer: Not Answered
+Correct Answer: b
+Hint:The double asterisk is Python's exponentiation operator.
+5. Which operator checks whether two values are equal?
+a )   =
+b )   !=
+c )   ==
+d )   >=
+Your Answer: Not Answered
+Correct Answer: c
+Hint:It uses two equal signs, unlike the operator used for assignment.
+PS C:\Users\HP\Desktop\mini proj> python quiz.py
+1. Which Python function returns the number of items in a list?
+a)count()
+b)size()
+c)len()
+d)length()
+Enter your answer (a/b/c/d): C
+2. Which data structure stores information as key-value pairs?
+a)List
+b)Dictionary
+c)Tuple
+d)Set
+Enter your answer (a/b/c/d): B
+3. Which keyword is used to define a function in Python?
+a)function
+b)define
+c)fun
+d)def
+Enter your answer (a/b/c/d): a
+4. What is the output of this code: print(2 ** 3)?
+a)6
+b)8
+c)9
+d)5
+Enter your answer (a/b/c/d): f
+Invalid answer
+Enter your answer (a/b/c/d): d
+5. Which operator checks whether two values are equal?
+a)=
+b)!=
+c)==
+d)>=
+Enter your answer (a/b/c/d): c
+
+---- Quiz Status------
+
+Quiz Completed!
+No.of Correct Answers: 3
+No.of Wrong Answers: 2
+Your Score is3/5
+Your Accuracy is 60.00%
+Failed Try Again Later
+--- Your Missed Questions ---
+Question: 3. Which keyword is used to define a function in Python?
+a)function
+b)define
+c)fun
+d)def
+Your Answer: a
+Correct Answer: d
+Hint: It is a three-letter keyword used before a function name.
+Question: 4. What is the output of this code: print(2 ** 3)?
+a)6
+b)8
+c)9
+d)5
+Your Answer: d
+Correct Answer: b
+Hint: The double asterisk is Python's exponentiation operator.
+PS C:\Users\HP\Desktop\mini proj> 
