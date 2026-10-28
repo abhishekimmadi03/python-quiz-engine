@@ -121,3 +121,84 @@ Your Answer: d
 Correct Answer: b
 Hint: The double asterisk is Python's exponentiation operator.
 PS C:\Users\HP\Desktop\mini proj> 
+5. Which operator checks whether two values are equal?
+Difficulty: Hard
+| Points: 3
+a)=
+b)!=
+c)==
+d)>=
+Enter your answer (a/b/c/d): c
+
+3. Which keyword is used to define a function in Python?
+Difficulty: Easy
+| Points: 1
+a)function
+b)define
+c)fun
+d)def
+Enter your answer (a/b/c/d): d
+
+4. What is the output of this code: print(2 ** 3)?
+Difficulty: Medium
+| Points: 2
+a)6
+b)8
+c)9
+d)5
+Enter your answer (a/b/c/d): c
+
+2. Which data structure stores information as key-value pairs?
+Difficulty: Medium
+| Points: 2
+a)List
+b)Dictionary
+c)Tuple
+d)Set
+Enter your answer (a/b/c/d): a
+
+1. Which Python function returns the number of items in a list?
+Difficulty: Easy
+| Points: 1
+a)count()
+b)size()
+c)len()
+d)length()
+Enter your answer (a/b/c/d): b
+
+---- Quiz Status------
+
+Quiz Completed!
+No.of Correct Answers: 2
+No.of Wrong Answers: 3
+Points Earned: 4 / 9
+Your Accuracy is 44.44%
+Failed Try Again Later
+--- Your Missed Questions ---
+Question: 3. Which keyword is used to define a function in Python?
+a)function
+b)define
+c)fun
+d)def
+Your Answer: c
+Correct Answer: d
+Difficulty: Easy
+Points for this question: 1
+Hint: It is a three-letter keyword used before a function name.
+Question: 4. What is the output of this code: print(2 ** 3)?
+a)6
+b)8
+c)9
+d)5
+Your Answer: a
+Correct Answer: b
+Difficulty: Easy
+Hint: The double asterisk is Python's exponentiation operator.
+Question: 5. Which operator checks whether two values are equal?
+a)=
+b)!=
+c)==
+d)>=
+Your Answer: b
+Correct Answer: c
+Difficulty: Easy
